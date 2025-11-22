@@ -15,6 +15,25 @@
 
 **东北师范大学** · 计算机信息与技术 · 本科 · 2017-2020
 
+---
+
+## 🚀 开源贡献
+
+> 维护6个Golang微服务基础组件库，专注于高性能、易用性、生产级质量
+
+| 项目 | 描述 | 核心特性 |
+|------|------|----------|
+| **[number-dispenser](https://github.com/nicexiaonie/number-dispenser)** | 分布式ID生成器 | Snowflake算法、QPS 10万+、支持集群部署 |
+| **[grds](https://github.com/nicexiaonie/grds)** | Redis客户端封装 | 连接池管理、分布式锁、缓存模式、模型生成器、开箱即用 |
+| **[ghttp](https://github.com/nicexiaonie/ghttp)** | HTTP客户端工具 | 链式调用、超时重试、中间件扩展、优雅API |
+| **[gconf](https://github.com/nicexiaonie/gconf)** | 配置管理组件 | 多格式支持、热加载、环境变量、配置中心对接 |
+| **[glog](https://github.com/nicexiaonie/glog)** | 高性能日志库 | 结构化日志、异步写入、链路追踪、性能优于标准库3倍 |
+| **[ghelper](https://github.com/nicexiaonie/ghelper)** | Golang工具集 | 常用函数库、单元测试覆盖95%+、生产级质量 |
+
+**技术亮点**：所有项目遵循Go最佳实践，代码规范、文档完善、已在生产环境验证
+
+---
+
 ## 💼 工作经历
 
 ### 深圳兴动生活（棋牌游戏）| 2023.09 ~ 至今
