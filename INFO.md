@@ -24,7 +24,7 @@
 | 项目 | 描述 | 核心特性 |
 |------|------|----------|
 | **[number-dispenser](https://github.com/nicexiaonie/number-dispenser)** | 分布式ID生成器 | Snowflake算法、QPS 10万+、支持集群部署 |
-| **[grds](https://github.com/nicexiaonie/grds)** | Redis客户端封装 | 连接池管理、分布式锁、缓存模式、模型生成器、开箱即用 |
+| **[grds](https://github.com/nicexiaonie/grds)** | Mysql客户端封装 | 连接池管理、分布式锁、缓存模式、模型生成器、开箱即用 |
 | **[ghttp](https://github.com/nicexiaonie/ghttp)** | HTTP客户端工具 | 链式调用、超时重试、中间件扩展、优雅API |
 | **[gconf](https://github.com/nicexiaonie/gconf)** | 配置管理组件 | 多格式支持、热加载、环境变量、配置中心对接 |
 | **[glog](https://github.com/nicexiaonie/glog)** | 高性能日志库 | 结构化日志、异步写入、链路追踪、性能优于标准库3倍 |
