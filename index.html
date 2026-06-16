@@ -154,11 +154,37 @@
                     </div>
                     <div class="timeline-wrapper">
                         <ul class="sec-content timeline">
+                            <!-- 红岸未来 -->
+                            <li class="timeline-item experience-job">
+                                <h3 class="timeline-title">
+                                    <span class="experience-place">红岸未来（工业数字化）</span>
+                                    <time class="experience-time">2026.02 ~ 至今</time>
+                                </h3>
+                                <dl class="experience-description timeline-content">
+                                    <dt class="experience-position">基础架构师 · 工业SCADA SaaS平台 · 独立负责后端</dt>
+                                    <dd class="experience-task" style="margin-bottom: 8px;">
+                                        独立负责工业SCADA SaaS平台的架构设计与后端实现，一人主导从架构、原型到编码，落地4个Go微服务 + SDK。基于TarsGo搭建服务注册/配置/链路全套，并将自研的6个Golang基础组件库用作生产基础设施。
+                                    </dd>
+                                    <dd class="experience-task">
+                                        <strong>自研流程调度引擎</strong>: 将工艺流程抽象为Phase模型，用DAG编排 + 状态机统一调度，把MQTT异步回调、HTTP同步、条件等待等异构设备通信收敛到一套执行模型，同时支撑配方调度与独立流程两类场景
+                                    </dd>
+                                    <dd class="experience-task">
+                                        <strong>主导设备模型重构</strong>: 基于车间现场调研，发现"元器件 + 设备组"的多层抽象在真实场景中冗余，砍掉设备组/角色/槽位等概念，下沉为"一逻辑设备 = 一PLC"模型，设备定位路径缩短一层，显著降低操作与维护成本
+                                    </dd>
+                                    <dd class="experience-task">
+                                        <strong>多协议统一抽象</strong>: 插件化协议代理，用统一接口屏蔽Modbus TCP / OPC-UA / Siemens S7的同步读写与MQTT异步回调差异，新增协议仅需注册插件、不触碰上层调度逻辑
+                                    </dd>
+                                    <dd class="experience-task">
+                                        <strong>面向生产约束的取舍</strong>: 数采采用"控制指令优先、监控数据让路"的三层按需策略，避免全量轮询点位占用工业总线带宽影响生产，在监控实时性与生产安全间做平衡
+                                    </dd>
+                                </dl>
+                            </li>
+
                             <!-- 深圳兴动生活 -->
                             <li class="timeline-item experience-job">
                                 <h3 class="timeline-title">
                                     <span class="experience-place">深圳兴动生活（棋牌游戏）</span>
-                                    <time class="experience-time">2023.09 ~ 至今</time>
+                                    <time class="experience-time">2023.09 ~ 2025.12</time>
                                 </h3>
                                 <dl class="experience-description timeline-content">
                                     <dt class="experience-position">全栈开发工程师 · 技术&测试负责人 · 团队19人</dt>
@@ -185,17 +211,14 @@
                                 </h3>
                                 <dl class="experience-description timeline-content">
                                     <dt class="experience-position">Golang高级开发工程师/技术专家 · 特征&基础部门负责人 · 团队11人</dt>
-                                    <dd class="experience-task" style="font-style: italic; color: #666;">
-                                        💡 2020.02后转为技术顾问，持续负责核心系统维护与技术攻坚，同时进行开源项目开发
+                                    <dd class="experience-task">
+                                        <strong>1. 全网文本去重系统</strong>: 独立设计10亿级数据去重架构，QPS 5000+，P99响应&lt;50ms，准确率99%（线上拦截结果人工抽样复核），日均拦截120万篇
                                     </dd>
                                     <dd class="experience-task">
-                                        <strong>1. 全网文本去重系统</strong>: 独立设计10亿级数据去重架构，QPS 5000+，响应时间&lt;50ms，准召率99%，日均拦截120万篇，降低存储成本60%
+                                        <strong>2. 内容审核平台2.0</strong>: 0-1主导微服务架构设计（Golang + gRPC），拖拽式流程配置，业务方接入周期从14天缩短至2天
                                     </dd>
                                     <dd class="experience-task">
-                                        <strong>2. 内容审核平台2.0</strong>: 0-1主导微服务架构设计（Golang + gRPC），拖拽式流程配置，接入周期从14天缩短至2天，支撑DAU从2000万增至4000万
-                                    </dd>
-                                    <dd class="experience-task">
-                                        <strong>3. 特征工程部门组建</strong>: 从0组建11人技术团队，落地视频相似度、音视频识别、文本审核、媒体处理等服务，年节省成本近千万
+                                        <strong>3. 特征工程部门组建</strong>: 从0组建11人技术团队，落地视频相似度、音视频识别、文本审核、媒体处理等服务
                                     </dd>
                                 </dl>
                             </li>
